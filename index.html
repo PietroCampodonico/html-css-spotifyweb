@@ -9,12 +9,14 @@
 </head>
 <body>
 
-    <main>
+    <main class="display-flex">
         <aside>
             <div class="sidebar display-flex">
-                    <div class="logo-container">
-                        <img src="img/logo.svg" alt="">
-                    </div>
+                    <a href="#">
+                        <div class="logo-container">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                    </a>
                     
                     <ul>
                         <li>
@@ -33,8 +35,10 @@
                     
                     <div class="playlist">
                         <h3>PLAYLIST</h3>
-                        <div class="square">+</div>
-                        <h3 class="ciao">Crea Playlist</h3>
+                        <a href="#">
+                            <div class="square">+</div>
+                            <h3 class="ciao">Crea Playlist</h3>
+                        </a>
                     </div>
 
                     <ul class="playlist-scroll">
@@ -48,23 +52,28 @@
                     </ul>
                     
                     <div>
-                        <div class="icon-xs-container">
-                            <img src="img/download.svg" alt="">
-                        </div>
-                        <a href="#">Installa app</a>
+                        <a href="">
+                            <div class="icon-xs-container">
+                                <img src="img/download.svg" alt="">
+                            </div>
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+
+                    <a href="#">
                         <div class="profile-img">
                             <img src="img/profile.svg" alt="">
                         </div>
                         <h3>John Doe</h3>
-                    </div>
+                    </a>
+            
                 
             </div>
         </aside>
 
         <article></article>
-
+        
     </main>
-
 
     <section class="toolbar">
         <div class="toolbar-content">
@@ -73,6 +82,8 @@
             <div>lorem</div>
         </div>
     </section>
-
+    
+    
+    
 </body>
 </html>
