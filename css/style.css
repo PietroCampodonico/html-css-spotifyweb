@@ -1,6 +1,37 @@
+/* """"""""""""""""""""
+    TABLE OF CONTENT 
+=======================*/
+
+/* """"""""""""""""""""
+    GENERAL RULES 
+=======================*/
+
 * {
     margin:0; 
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+/* """""""""""
+    TOOLBAR
+==============*/
+
+.toolbar {
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    display: flex;
+    align-items: center;
+
+}
+
+.toolbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
