@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
 <body>
 
-    <main>
+    <main class="display-flex">
+        <!-- da centrare download icon -->
         <aside class="f-screen">
             <div class="sidebar display-flex">
                 <a href="#" class="logo-big">
@@ -41,10 +45,10 @@
                 </ul>
                 
                 <div class="playlist hidden">
-                    <h3>PLAYLIST</h3>
+                    <h4 class="text-white p-bottom-10">PLAYLIST</h4>
                     <a href="#">
                         <div class="square">+</div>
-                        <h3>Crea Playlist</h3>
+                        <h4>Crea Playlist</h4>
                     </a>    
                 </div>
 
@@ -69,7 +73,7 @@
                     <div class="profile-img">
                         <img src="img/profile.svg" alt="profile">
                     </div>
-                    <h3 class="display-none">John Doe</h3>
+                    <h3 class="display-none text-white">John Doe</h3>
                 </div>
             </div>
         </aside>
@@ -80,9 +84,40 @@
 
     <section class="toolbar">
         <div class="toolbar-content">
-            <div>lorem</div>
-            <div>lorem</div>
-            <div>lorem</div>
+            <div class="box left">
+                <div class="now-playing">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div>
+                    <h5 class="text-white">Sinister</h5>
+                    <h5><small>Brano Nome</small> </h5>
+                </div>
+                <div>
+                    <span class="icon-container-small"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                    <span class="icon-container-small"><i class="fa fa-folder-o" aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+            <div class="box center">
+                <div>
+                    <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-step-backward fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-step-forward fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-repeat fa-lg" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                    <span>0:25</span>
+                    <div class="line">
+                        <div class="line line-progress"></div>
+                    </div>
+                    
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <div class="box right">lorem</div>
         </div>
     </section>
     

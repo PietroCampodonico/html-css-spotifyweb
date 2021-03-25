@@ -14,30 +14,43 @@
     color: grey;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+img {
+    width: 100%;
 }
 
 .display-flex {
     display: flex;
 }
 
+/* .flex-centering {
+    align-items: center;
+} */
+
 .f-screen {
     height: 100vh;
 }
 
+.p-bottom-10 {
+    padding-bottom: 10px;
+}
 
+.sidebar > *,
+.toolbar-content {
+    margin: 15px;
+}
 
 /* Typography */
 
-h1,
-h3,
-h4 {
+.text-white {
     color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ===========
@@ -57,13 +70,15 @@ aside {
 aside a *,
 aside li *,
 .sidebar .my-profile > *,
-.sidebar .playlist a > * {
+.sidebar .playlist a > *,
+.toolbar-content > .box > div {
     vertical-align: middle;
     display: inline-block;
 }
 
 li:hover *,
-.download:hover *  {
+.download:hover *,
+.playlist:hover h4 {
     color: white
 }
 
@@ -71,11 +86,6 @@ li:hover *,
     flex-direction: column;
     height: calc(100vh - 75px);
 }
-
-.sidebar > * {
-    margin: 15px;
-}
-
 
 .sidebar .icon-container,
 .sidebar .profile-img {
@@ -150,7 +160,6 @@ li:hover *,
     height: 75px;
     display: flex;
     align-items: center;
-
 }
 
 .toolbar-content {
@@ -159,10 +168,35 @@ li:hover *,
     width: 100%;
 }
 
+.box * {
+    margin-right: 10px;
+}
+
+.box.center i,
+.box.right i {
+    color: lightgray;
+}
+
+.now-playing {
+    width: 40px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.line-progress {
+    width: 15%;
+    background-color: lightgray;
+}
 /* ===============
     MEDIA QUERIES
 ==================*/
 
+/*SM-LG */
 @media screen and (min-width: 768px) {
     aside {
         width: 250px
@@ -176,10 +210,10 @@ li:hover *,
     border-left: 3px solid #a1ed2c;
     padding-left: 12px;
     margin-left: -15px;
+    }
 }
 
-}
-
+/* XS */
 @media screen and (max-width: 767px) {
     aside {
         width: 55px;
