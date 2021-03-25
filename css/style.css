@@ -73,7 +73,7 @@ li:hover *,
 }
 
 .sidebar > * {
-    padding: 15px;
+    margin: 15px;
 }
 
 
@@ -174,7 +174,7 @@ li:hover *,
 
     #border-green {
     border-left: 3px solid #a1ed2c;
-    padding-left: 15px;
+    padding-left: 12px;
     margin-left: -15px;
 }
 
