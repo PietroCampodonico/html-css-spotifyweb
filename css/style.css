@@ -26,6 +26,10 @@ a {
     display: flex;
 }
 
+.f-screen {
+    height: 100vh;
+}
+
 /* Typography */
 
 
@@ -39,9 +43,6 @@ h4 {
     MAIN
 ==============*/
 
-main {
-    height: 100vh;
-}
 
 /* ===========
     SIDEBAR
@@ -60,6 +61,7 @@ aside li * {
 
 .sidebar {
     flex-direction: column;
+    justify-content: stretch;
 }
 
 .sidebar > * {
@@ -70,7 +72,7 @@ aside li * {
     display: inline-block;
 }
 
-.square {
+.sidebar .square {
     font-size: 30px;
     background-color: lightgrey;
     line-height: 35px ;
@@ -82,11 +84,11 @@ aside li * {
 }
 
 
-.playlist-scroll {
+.sidebar .playlist-scroll {
     flex-grow: 1;
 }
 
-.logo-container {
+.sidebar .logo-container {
     width: 150px;   
 }
 
