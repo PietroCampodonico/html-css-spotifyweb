@@ -83,13 +83,13 @@
     </main>
 
     <section class="toolbar">
-        <div class="toolbar-content">
+        <div class="toolbar-content display-flex">
             <div class="box left">
                 <div class="now-playing">
                     <img src="img/sinister.jpeg" alt="">
                 </div>
-                <div>
-                    <h5 class="text-white">Sinister</h5>
+                <div class="display-flex flex-direction-col">
+                    <h5 class="text-white flex-self-left ">Sinister</h5>
                     <h5><small>Brano Nome</small> </h5>
                 </div>
                 <div>
@@ -108,21 +108,25 @@
                 </div>
 
                 <div>
-                    <span>0:25</span>
+                    <span class="text-white">0:25</span>
                     <div class="line">
-                        <div class="line line-progress"></div>
+                        <div class="line line-progress">
+                            <div class="circle"></div>
+                        </div>
                     </div>
                     
-                    <span>4:35</span>
+                    <span class="text-white">4:35</span>
                 </div>
             </div>
 
-            <div class="box right">
+            <div class="box right  flex-vetical-alignment">
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <i class="fa fa-television" aria-hidden="true"></i>
                 <i class="fa fa-volume-up" aria-hidden="true"></i>
                 <div class="sound line">
-                    <div class="sound line line-progress"></div>
+                    <div class="sound line line-progress">
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
         </div>

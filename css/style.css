@@ -22,10 +22,6 @@ img {
     display: flex;
 }
 
-/* .flex-centering {
-    align-items: center;
-} */
-
 .f-screen {
     height: 100vh;
 }
@@ -39,7 +35,28 @@ img {
     margin: 15px;
 }
 
+/* Flexbox */
+
+.flex-vetical-alignment {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+.flex-self-left {
+    align-self: flex-start;
+}
+
+.flex-self-center {
+    align-self: center;
+}
+
+
 /* Typography */
+
 
 .text-white {
     color: white;
@@ -70,8 +87,7 @@ aside {
 aside a *,
 aside li *,
 .sidebar .my-profile > *,
-.sidebar .playlist a > *,
-.toolbar-content > .box > div {
+.sidebar .playlist a > * {
     vertical-align: middle;
     display: inline-block;
 }
@@ -84,7 +100,7 @@ li:hover *,
 
 .sidebar {
     flex-direction: column;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 90px);
 }
 
 .sidebar .icon-container,
@@ -157,22 +173,35 @@ li:hover *,
     bottom: 0;
     left: 0;
     right: 0;
-    height: 75px;
+    height: 90px;
     display: flex;
     align-items: center;
 }
 
 .toolbar-content {
-    display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.box * {
-    margin-right: 10px;
+.box,
+.box > div {
+    display: flex;
+    align-items: center;
 }
 
-.box.center i,
+.box * {
+    /* margin-right: 10px; */
+}
+
+.box.center {
+    flex-direction: column;
+}
+
+.box.center i {
+    color: white;
+    margin: 0 12px;
+}
+
 .box.right i {
     color: lightgray;
 }
@@ -182,15 +211,55 @@ li:hover *,
 }
 
 .line {
-    width: 150px;
+    width: 500px;
     height: 5px;
     background-color: gray;
     border-radius: 5px;
 }
 
 .line-progress {
-    width: 15%;
+    position: relative;
+    width: 20%;
     background-color: lightgray;
+}
+
+.sound.line {
+    width: 150px;
+}
+
+.sound.line-progress {
+    width: 30px
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* hover */
+
+.icon-container-small:hover i,
+h5:hover small {
+    color: white;
+}
+
+h5:hover small {
+    text-decoration: underline;
+}
+
+.line:hover .line-progress{
+    background-color: #a1ed2c;
+}
+
+.line:hover .circle {
+    display: block;
 }
 
 /* ===============
