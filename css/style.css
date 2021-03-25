@@ -55,7 +55,7 @@ h4 {
 
 aside {
     background-color: black;
-    width: 250px;
+    display: inline-block;
 }
 
 aside a *,
@@ -158,4 +158,44 @@ aside li *,
     justify-content: space-between;
     width: 100%;
 }
+
+/* ===============
+    MEDIA QUERIES
+==================*/
+
+@media screen and (min-width: 768px) {
+    aside {
+        width: 250px
+    }
+
+    .logo-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    aside {
+        width: 55px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    .sidebar h5,
+    .logo-big,
+    .my-profile > h3.display-none {
+        display: none;
+    }
+
+    .logo-small {
+        margin-bottom: 0;
+    }
+
+    .my-profile {
+        border: none
+    }
+
+}
+
 

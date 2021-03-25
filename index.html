@@ -12,30 +12,35 @@
     <main>
         <aside class="f-screen">
             <div class="sidebar display-flex">
-                <a href="#">
+                <a href="#" class="logo-big">
                     <div class="logo-container">
-                        <img src="img/logo.svg" alt="">
+                        <img src="img/logo.svg" alt="logo-big">
                     </div>
                 </a>
+
+                <a href="#" class="logo-small">
+                    <div class="icon-container">
+                        <img src="img/logo-small.svg" alt="logo-small">
+                    </div>
+                </a>
+
                 
                 <ul>
                     <li>
-                        <a href="#">
-                            <div class="icon-container"><img src="img/home.svg" alt=""></div>
-                            <a href="#">Home</a>
-                        </a>
+                        <div class="icon-container"><img src="img/home.svg" alt=""></div>
+                        <a href="#"><h5>Home</h5></a>
                     </li>
                     <li>
                         <div class="icon-container"><img src="img/search.svg" alt=""></div>
-                        <a href="#">Cerca</a>
+                        <a href="#"><h5>Cerca</h5></a>
                     </li>
                     <li>
                         <div class="icon-container"><img src="img/libreria.svg" alt=""></div>
-                        <a href="#">La tua libreria</a>
+                        <a href="#"><h5>La tua libreria</h5></a>
                     </li>
                 </ul>
                 
-                <div class="playlist">
+                <div class="playlist hidden">
                     <h3>PLAYLIST</h3>
                     <a href="#">
                         <div class="square">+</div>
@@ -44,27 +49,27 @@
                 </div>
 
                 <ul class="playlist-scroll">
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome Playlist</h5></a></li>
                 </ul>
                 
-                <a href="#">
-                    <div class="icon-xs-container">
+                <a href="#" class="download">
+                    <div class="icon-xs-container display-flex">
                         <img src="img/download.svg" alt="">
                     </div>
-                    <span>Installa app</span>
+                    <h5>Installa app</h5>
                 </a>
 
                 <div class="my-profile">
                     <div class="profile-img">
                         <img src="img/profile.svg" alt="profile">
                     </div>
-                    <h3>John Doe</h3>
+                    <h3 class="display-none">John Doe</h3>
                 </div>
             </div>
         </aside>
