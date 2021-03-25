@@ -61,15 +61,27 @@ aside li * {
 
 .sidebar {
     flex-direction: column;
-    justify-content: stretch;
+    height: calc(100vh - 75px);
 }
 
 .sidebar > * {
     margin: 15px;
 }
 
-.playlist a > * {
-    display: inline-block;
+.sidebar .icon-container,
+.sidebar .profile-img {
+    width: 25px;
+}
+
+.icon-container,
+.playlist > h3 {
+    margin-bottom: 5px;
+}
+
+
+
+.sidebar .logo-container {
+    width: 150px;   
 }
 
 .sidebar .square {
@@ -88,14 +100,8 @@ aside li * {
     flex-grow: 1;
 }
 
-.sidebar .logo-container {
-    width: 150px;   
-}
-
-.sidebar .icon-container,
-.sidebar .profile-img {
-    width: 25px;
-    display: inline-block;
+.playlist-scroll li{
+    margin-bottom: 10px
 }
 
 .sidebar .icon-xs-container {
@@ -110,6 +116,11 @@ aside li * {
     overflow: hidden;
 }
 
+.my-profile {
+    border-top: 1px solid grey;
+    padding-top: 15px;
+    margin-top: 0;
+}
 
 /* =============
     ARTICLE
