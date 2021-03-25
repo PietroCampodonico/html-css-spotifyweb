@@ -30,10 +30,6 @@ a {
     height: 100vh;
 }
 
-li:hover a,
-a:hover *  {
-    color: white
-}
 
 
 /* Typography */
@@ -66,7 +62,10 @@ aside li *,
     display: inline-block;
 }
 
-
+li:hover *,
+.download:hover *  {
+    color: white
+}
 
 .sidebar {
     flex-direction: column;
@@ -74,8 +73,9 @@ aside li *,
 }
 
 .sidebar > * {
-    margin: 15px;
+    padding: 15px;
 }
+
 
 .sidebar .icon-container,
 .sidebar .profile-img {
@@ -171,6 +171,13 @@ aside li *,
     .logo-small {
         display: none;
     }
+
+    #border-green {
+    border-left: 3px solid #a1ed2c;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
 }
 
 @media screen and (max-width: 767px) {
