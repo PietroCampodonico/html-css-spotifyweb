@@ -2,7 +2,7 @@
     TABLE OF CONTENT
 =======================*/
 
-/* """"""""""""""""""""
+/* ====================
     GENERAL RULES
 =======================*/
 
@@ -30,13 +30,18 @@ a {
     height: 100vh;
 }
 
-/* Typography */
+li:hover a,
+a:hover *  {
+    color: white
+}
 
+
+/* Typography */
 
 h1,
 h3,
 h4 {
-        color: white;
+    color: white;
 }
 
 /* ===========
@@ -54,10 +59,14 @@ aside {
 }
 
 aside a *,
-aside li * {
+aside li *,
+.sidebar .my-profile > *,
+.sidebar .playlist a > * {
     vertical-align: middle;
     display: inline-block;
 }
+
+
 
 .sidebar {
     flex-direction: column;
@@ -78,8 +87,6 @@ aside li * {
     margin-bottom: 5px;
 }
 
-
-
 .sidebar .logo-container {
     width: 150px;   
 }
@@ -95,6 +102,9 @@ aside li * {
     font-weight: bold;
 }
 
+.sidebar .square:hover {
+    background-color: white;
+}
 
 .sidebar .playlist-scroll {
     flex-grow: 1;
