@@ -79,6 +79,7 @@ a {
 
 article {
     flex-grow: 1;
+    align-content: stretch;
 }
 
 .button,
@@ -216,11 +217,6 @@ li:hover *,
     padding-top: 15px;
     margin-top: 0;
 }
-
-/* =============
-    ARTICLE
-==============*/
-
 
 /* =============
     TOOLBAR
