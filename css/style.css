@@ -99,7 +99,8 @@ li:hover *,
 
 .sidebar {
     flex-direction: column;
-    height: calc(100vh - 90px);
+    /* height: calc(100vh - 90px); */
+    height: 100vh;
 }
 
 .sidebar .icon-container,
@@ -168,16 +169,16 @@ li:hover *,
 
 .toolbar {
     background-color: #282828;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     height: 90px;
     display: flex;
-    align-items: center;
 }
 
 .toolbar-content {
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -233,8 +234,8 @@ li:hover *,
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: white;
     margin: 0 -15px;
@@ -279,6 +280,48 @@ h5:hover small {
     MEDIA QUERIES
 ==================*/
 
+
+
+/* MD */
+@media screen (max-width: 991px) {
+    .line {
+        width: 350px
+    }
+}
+/* SM */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+
+/* XS */
+@media screen and (max-width: 767px) {
+    aside {
+        width: 55px;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    .sidebar h5,
+    .logo-big,
+    .my-profile > h3.display-none {
+        display: none;
+    }
+    
+    .logo-small {
+        margin-bottom: 0;
+    }
+    
+    .my-profile {
+        border: none
+    }
+    
+}
+
+/* MIXED QUERIES */
+
 /*SM-LG */
 @media screen and (min-width: 768px) {
     aside {
@@ -296,30 +339,10 @@ h5:hover small {
     }
 }
 
-/* XS */
-@media screen and (max-width: 767px) {
-    aside {
-        width: 55px;
+/* XS-SM */
+@media screen and (max-width: 991px) {
+    #fav-folder {
+        display: flex;
+        flex-direction: column;
     }
-
-    .hidden {
-        visibility: hidden;
-    }
-
-    .sidebar h5,
-    .logo-big,
-    .my-profile > h3.display-none {
-        display: none;
-    }
-
-    .logo-small {
-        margin-bottom: 0;
-    }
-
-    .my-profile {
-        border: none
-    }
-
 }
-
-
