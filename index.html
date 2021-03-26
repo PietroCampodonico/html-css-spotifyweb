@@ -11,10 +11,10 @@
     <title>SpotifyWeb</title>
 </head>
 <body>
-
+    <!-- da sistemare scorrimento veriticale -->
     <main class="display-flex">
         <!-- da centrare download icon -->
-        <aside class="f-screen">
+        <aside>
             <div class="sidebar display-flex">
                 <a href="#" class="logo-big">
                     <div class="logo-container">
@@ -45,7 +45,7 @@
                 </ul>
                 
                 <div class="playlist hidden">
-                    <h4 class="text-white p-bottom-10">PLAYLIST</h4>
+                    <h5 class="text-white p-bottom-10">PLAYLIST</h5>
                     <a href="#">
                         <div class="square">+</div>
                         <h4>Crea Playlist</h4>
@@ -79,8 +79,36 @@
         </aside>
 
         <article >
-            <section class="top">
-                <div class="button text-white">effettua l'upgrade</div>
+            <section class="top display-flex">
+                <!-- sistemare effetto hover -->
+                <h4 class="button text-white">effettua l'upgrade</h4>
+            </section>
+
+            <section class="middle">
+                <nav>
+                    <ul class="text-white display-flex">
+                        <li class="display-flex flex-direction-col">
+                            <a href="#"><h5>in evidenza</h5>
+                            <div class="line"></div>
+                        </a>
+                            </li>
+                        <li>
+                            <a href="#"><h5>podcast</h5></a>
+                        </li>
+                        <li>
+                            <a href="#"><h5>classifiche</h5></a>
+                        </li>
+                        <li>
+                            <a href="#"><h5>generi e mood</h5></a>
+                        </li>
+                        <li>
+                            <a href="#"><h5>nuove uscite</h5></a>
+                        </li>
+                        <li>
+                            <a href="#"><h5>scopri</h5></a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </article>
         
@@ -135,8 +163,5 @@
             </div>
         </div>
     </section>
-    
-    
-    
 </body>
 </html>
