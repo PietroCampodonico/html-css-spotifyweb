@@ -371,6 +371,10 @@ h5:hover small {
     .toolbar .box.center .line:not(.line-progress) {
         width: 125px
     }
+
+    .sound.line:not(.line-progress) {
+        width: 100px;
+    }
 }
 
 /* MIXED QUERIES */
