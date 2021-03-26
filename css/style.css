@@ -30,8 +30,7 @@ img {
     padding-bottom: 10px;
 }
 
-.sidebar > *,
-.toolbar-content {
+.sidebar > * {
     margin: 15px;
 }
 
@@ -189,9 +188,6 @@ li:hover *,
     align-items: center;
 }
 
-.box * {
-    /* margin-right: 10px; */
-}
 
 .box.center {
     flex-direction: column;
@@ -199,7 +195,6 @@ li:hover *,
 
 .box.center i {
     color: white;
-    margin: 0 12px;
 }
 
 .box.right i {
@@ -208,6 +203,7 @@ li:hover *,
 
 .now-playing {
     width: 40px;
+    margin-right: 10px;
 }
 
 .line {
@@ -231,7 +227,7 @@ li:hover *,
     width: 30px
 }
 
-.circle {
+.box .line-progress > .circle {
     display: none;
     position: absolute;
     top: 50%;
@@ -241,6 +237,23 @@ li:hover *,
     height: 20px;
     border-radius: 50%;
     background-color: white;
+    margin: 0 -15px;
+}
+
+.toolbar > div {
+    margin: 0 15px;
+}
+
+.box i {
+    margin: 0 12px
+}
+
+.box.center span {
+    margin: 0 20px;
+}
+
+#fav-folder {
+    margin-left: 30px
 }
 
 /* hover */
