@@ -1,9 +1,24 @@
 /* =====================
     TABLE OF CONTENT
 =======================*/
+    /*  1. General rules
+                1.1 Flexbox
+                1.2 Typograpghy 
+        
+        2.  Main    
+                2.1 Aside
+                    2.1.1 Sidebar
+                2.2 Article
+                    2.2.1 Top (section) 
+                    2.2.2 Middle (section)
+                    2.2.3 Bottom (section)
+        
+        3.  Toolbar
 
+        4. Media Queries
+        */      
 /* ====================
-    GENERAL RULES
+   1. GENERAL RULES
 =======================*/
 
 * {
@@ -37,7 +52,13 @@ img {
     border-radius: 5px;
 }
 
-/* Flexbox */
+li:hover *,
+.download:hover *,
+.playlist:hover h4 {
+    color: white
+}
+
+/* 1.1 Flexbox */
 
 .flex-vetical-alignment {
     justify-content: center;
@@ -57,7 +78,7 @@ img {
 }
 
 
-/* Typography */
+/* 1.2 Typography */
 
 .text-white {
     color: white;
@@ -72,69 +93,11 @@ a {
 }
 
 /* ===========
-    MAIN
+    2. MAIN
 ==============*/
 
-/* ARTICLE */
-
-article {
-    flex-grow: 1;
-    align-content: stretch;
-}
-
-.button,
-.middle li {
-    margin: 15px 15px;
-}
-
-/* top */
-
-section.top {
-    background-color: #080b12;
-    justify-content: flex-end;
-}
-
-.button {
-    padding: 15px 35px;
-    border: 1px solid white;
-    text-transform: uppercase;
-    border-radius: 30px;
-    font-size: 14px;
-}
-
-
-.button:hover {
-    font-size: 15px;
-}
-
-/* middle */
-
-section.middle {
-    background-color: #141922;
-}
-
-.middle ul {
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.middle li {
-    text-transform: uppercase;
-}
-
-.middle .line {
-    width: 30px;
-    height: 2px;
-    background-color: #a1ed2c;
-    margin: 5px auto;
-}
-
-.middle li:hover a {
-    color: white;
-}
-
 /* ===========
-    SIDEBAR
+    2.1 Aside
 ==============*/
 
 aside {
@@ -152,11 +115,7 @@ aside li *,
     display: inline-block;
 }
 
-li:hover *,
-.download:hover *,
-.playlist:hover h4 {
-    color: white
-}
+/* 2.1.1 Sidebar */
 
 .sidebar {
     flex-direction: column;
@@ -218,9 +177,77 @@ li:hover *,
     margin-top: 0;
 }
 
+
+/* ==========
+2.2 ARTICLE 
+=============*/
+
+article {
+    flex-grow: 1;
+    align-content: stretch;
+}
+
+.button,
+.middle li {
+    margin: 15px 15px;
+}
+
+/* 2.2.1 top */
+
+section.top {
+    background-color: #080b12;
+    justify-content: flex-end;
+}
+
+.button {
+    padding: 15px 35px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+
+.button:hover {
+    font-size: 15px;
+}
+
+/* 2.2.2 middle */
+
+section.middle,
+.bottom.albums-list {
+    background-color: #141922;
+}
+
+.middle ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.middle li {
+    text-transform: uppercase;
+}
+
+.middle .line {
+    width: 30px;
+    height: 2px;
+    background-color: #a1ed2c;
+    margin: 5px auto;
+}
+
+.middle li:hover a {
+    color: white;
+}
+
+/* 2.2.3 bottom */
+
+.bottom.bottom.albums-list {
+    height: calc(100% - 90px);
+}
+
 /* =============
-    TOOLBAR
-==============*/
+    3. TOOLBAR
+=================*/
 
 .toolbar {
     background-color: #282828;
@@ -321,7 +348,7 @@ h5:hover small {
 }
 
 /* ===============
-    MEDIA QUERIES
+  4. MEDIA QUERIES
 ==================*/
 
 
