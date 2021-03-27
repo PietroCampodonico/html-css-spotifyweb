@@ -42,10 +42,6 @@ img {
     padding-bottom: 10px;
 }
 
-.sidebar > * {
-    margin: 15px;
-}
-
 .line {
     width: 275px;
     height: 3px;
@@ -93,6 +89,10 @@ a {
     text-decoration: none;
 }
 
+.fa-play-circle-o {
+    color: white;
+}
+
 /* ===========
     2. MAIN
 ==============*/
@@ -103,8 +103,8 @@ a {
 
 aside {
     background-color: black;
-    display: inline-block;
-    height: calc(100vh - 90px);
+    /* height: calc(100vh - 90px); */
+    /* height: 100vh; */
 }
 
 aside a *,
@@ -119,7 +119,8 @@ aside li *,
 
 .sidebar {
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 90px);
+
 }
 
 .sidebar .icon-container,
@@ -184,18 +185,13 @@ aside li *,
 
 article {
     flex-grow: 1;
-    align-content: stretch;
 }
 
 .sidebar > *,
 .button,
-.middle li,
-.bottom .album {
-    margin: 15px 15px;
-}
-/* .sidebar > * {
+.middle li {
     margin: 15px;
-} */
+}
 
 /* 2.2.1 section.top */
 
@@ -246,38 +242,74 @@ section.middle,
 
 /* 2.2.3 section.bottom */
 
+section.bottom {
+    padding: 15px;
+}
+
+section.bottom > section {
+    margin: 30px 0;
+}
+
+.bottom h2,
+.bottom h4 {
+    color: white;
+}
+
+.bottom h4 {
+    margin: 5px 0
+}
+
 .bottom.bottom.albums-list {
     height: calc(100% - 90px);
 }
 
-.albums-list .row {
+.albums-list .row,
+.album {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.bottom h2,
-.bottom h5:not(small) {
-    color: white;
-}
-
-.bottom h2 {
-    margin-left: 15px;
-}
-
-.bottom h5 {
-    margin: 5px 0
-}
-
+.album,
 .album-container {
     max-width: 200px;
 }
 
-/* Row.First */
+.album {
+    position: relative;
+    margin-top: 15px;
+    margin-right: 15px;
+    flex-direction: column;
+    text-align: center;
+}
 
 
+.album-container > .black-hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 200px;
+    visibility: hidden;
+}
 
-/* Row.Second */
+.album-container:hover .black-hover {
+    visibility: visible;
+}
 
 /* Row.Third */
+
+section.third .album-container,
+section.third .album-container > .black-hover {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+section > h5 {
+    margin: 10px 0;
+}
 /* =============
     3. TOOLBAR
 =================*/
@@ -364,11 +396,11 @@ section.middle,
 /* 3.1 hover */
 
 .icon-container-small:hover i,
-h5:hover small {
+.toolbar h5:hover small {
     color: white;
 }
 
-h5:hover small {
+.toolbar h5:hover small {
     text-decoration: underline;
 }
 
