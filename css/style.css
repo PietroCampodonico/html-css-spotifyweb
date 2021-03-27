@@ -1,5 +1,5 @@
 /* =====================
-    TABLE OF CONTENT 
+    TABLE OF CONTENTS 
 =======================*/
     /*  1. General rules
                 1.1 Flexbox
@@ -56,11 +56,6 @@ img {
     border-radius: 5px;
 }
 
-li:hover *,
-.download:hover *,
-.playlist:hover h4 {
-    color: white
-}
 
 /* 1.1 Flexbox */
 
@@ -84,7 +79,11 @@ li:hover *,
 
 /* 1.2 Typography */
 
-.text-white {
+li:hover *,
+.download:hover *,
+.playlist:hover h4,
+.text-white,
+.fa-play-circle-o {
     color: white;
 }
 
@@ -96,8 +95,9 @@ a {
     text-decoration: none;
 }
 
-.fa-play-circle-o {
-    color: white;
+.toolbar .fa-play-circle-o:hover,
+.button:hover {
+    transform: scale(1.1);
 }
 
 /* ===========
@@ -110,8 +110,6 @@ a {
 
 aside {
     background-color: black;
-    /* height: calc(100vh - 90px); */
-    /* height: 100vh; */
 }
 
 aside a *,
@@ -126,6 +124,7 @@ aside li *,
 
 .sidebar {
     flex-direction: column;
+    align-self: stretch;
     height: calc(100vh - 90px);
 
 }
@@ -172,6 +171,7 @@ aside li *,
    display: inline-block;
 }
 
+
 .sidebar .profile-img {
     max-height: 25px;
     background-color: grey;
@@ -184,7 +184,6 @@ aside li *,
     padding-top: 15px;
     margin-top: 0;
 }
-
 
 /* ==========
 2.2 ARTICLE 
@@ -208,16 +207,11 @@ section.top {
 }
 
 .button {
-    padding: 15px 35px;
+    padding: 10px 25px;
     border: 1px solid white;
     text-transform: uppercase;
     border-radius: 30px;
     font-size: 14px;
-}
-
-
-.button:hover {
-    font-size: 15px;
 }
 
 /* 2.2.2 section.middle */
@@ -458,7 +452,11 @@ section > h5 {
     .logo-small {
         margin-bottom: 0;
     }
-    
+
+    .sidebar a.download {
+    text-align: center;
+    }
+
     .my-profile {
         border: none
     }
