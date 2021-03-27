@@ -12,11 +12,18 @@
                     2.2.1 Section.Top  
                     2.2.2 Section.Middle 
                     2.2.3 Section.Bottom 
+                        2.2.3.1 Row.Third
         
         3.  Toolbar
                 3.1 Hover
 
         4. Media Queries
+            4.1 MD
+            4.2 SM
+            4.3 XS
+            4.4 Mixed Queries
+                4.4.1 SM-LG
+                4.4.2 XS-SM
         */      
 /* ====================
    1. GENERAL RULES
@@ -299,7 +306,7 @@ section.bottom > section {
     visibility: visible;
 }
 
-/* Row.Third */
+/* 2.2.3.1 Row.Third */
 
 section.third .album-container,
 section.third .album-container > .black-hover {
@@ -418,13 +425,13 @@ section > h5 {
 
 
 
-/* MD */
+/* 4.1 MD */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .toolbar .box.center .line:not(.line-progress) {
         width: 225px
     }
 }
-/* SM */
+/* 4.2 SM */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .toolbar .box.center .line:not(.line-progress) {
         width: 175px
@@ -432,7 +439,7 @@ section > h5 {
 
 }
 
-/* XS */
+/* 4.3 XS */
 @media screen and (max-width: 767px) {
     aside {
         width: 55px;
@@ -465,9 +472,9 @@ section > h5 {
     }
 }
 
-/* MIXED QUERIES */
+/* 4.4 MIXED QUERIES */
 
-/*SM-LG */
+/*4.4.1 SM-LG */
 @media screen and (min-width: 768px) {
     aside {
         width: 225px
@@ -484,7 +491,7 @@ section > h5 {
     }
 }
 
-/* XS-SM */
+/* 4.4.2 XS-SM */
 @media screen and (max-width: 991px) {
     #fav-folder {
         display: flex;
