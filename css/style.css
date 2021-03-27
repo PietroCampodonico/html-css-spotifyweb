@@ -1,5 +1,5 @@
 /* =====================
-    TABLE OF CONTENT
+    TABLE OF CONTENT 
 =======================*/
     /*  1. General rules
                 1.1 Flexbox
@@ -9,11 +9,12 @@
                 2.1 Aside
                     2.1.1 Sidebar
                 2.2 Article
-                    2.2.1 Top (section) 
-                    2.2.2 Middle (section)
-                    2.2.3 Bottom (section)
+                    2.2.1 Section.Top  
+                    2.2.2 Section.Middle 
+                    2.2.3 Section.Bottom 
         
         3.  Toolbar
+                3.1 Hover
 
         4. Media Queries
         */      
@@ -104,7 +105,6 @@ aside {
     background-color: black;
     display: inline-block;
     height: calc(100vh - 90px);
-
 }
 
 aside a *,
@@ -187,12 +187,17 @@ article {
     align-content: stretch;
 }
 
+.sidebar > *,
 .button,
-.middle li {
+.middle li,
+.bottom .album {
     margin: 15px 15px;
 }
+/* .sidebar > * {
+    margin: 15px;
+} */
 
-/* 2.2.1 top */
+/* 2.2.1 section.top */
 
 section.top {
     background-color: #080b12;
@@ -212,7 +217,7 @@ section.top {
     font-size: 15px;
 }
 
-/* 2.2.2 middle */
+/* 2.2.2 section.middle */
 
 section.middle,
 .bottom.albums-list {
@@ -239,12 +244,40 @@ section.middle,
     color: white;
 }
 
-/* 2.2.3 bottom */
+/* 2.2.3 section.bottom */
 
 .bottom.bottom.albums-list {
     height: calc(100% - 90px);
 }
 
+.albums-list .row {
+    display: flex;
+}
+
+.bottom h2,
+.bottom h5:not(small) {
+    color: white;
+}
+
+.bottom h2 {
+    margin-left: 15px;
+}
+
+.bottom h5 {
+    margin: 5px 0
+}
+
+.album-container {
+    max-width: 200px;
+}
+
+/* Row.First */
+
+
+
+/* Row.Second */
+
+/* Row.Third */
 /* =============
     3. TOOLBAR
 =================*/
@@ -328,7 +361,7 @@ section.middle,
     margin-left: 30px
 }
 
-/* hover */
+/* 3.1 hover */
 
 .icon-container-small:hover i,
 h5:hover small {
