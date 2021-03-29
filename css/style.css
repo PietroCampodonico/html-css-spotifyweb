@@ -104,6 +104,10 @@ a {
     2. MAIN
 ==============*/
 
+main {
+    height: calc(100vh - 90px);
+}
+
 /* ===========
     2.1 Aside
 ==============*/
@@ -185,6 +189,11 @@ aside li *,
 
 article {
     flex-grow: 1;
+    overflow: auto;
+}
+
+.sidebar {
+    height: 100%;
 }
 
 .sidebar > *,
