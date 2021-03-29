@@ -184,6 +184,10 @@ aside li *,
 2.2 ARTICLE 
 =============*/
 
+article {
+    flex-grow: 1;
+}
+
 .sidebar > *,
 .button,
 .middle li {
