@@ -110,8 +110,6 @@ a {
 
 aside {
     background-color: black;
-    overflow: auto;
-    min-width: 225px;
 }
 
 aside a *,
@@ -427,8 +425,8 @@ section > h5 {
 
 /* 4.3 XS */
 @media screen and (max-width: 767px) {
-    aside {
-        min-width: 55px;
+    .sidebar {
+        width: 55px;
     }
     
     .hidden {
@@ -466,10 +464,6 @@ section > h5 {
 
 /*4.4.1 SM-LG */
 @media screen and (min-width: 768px) {
-    aside {
-        width: 225px
-    }
-
     .logo-small {
         display: none;
     }
