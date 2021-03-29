@@ -123,10 +123,6 @@ aside li *,
 
 /* 2.1.1 Sidebar */
 
-.sidebar {
-    flex-direction: column;
-}
-
 .sidebar .icon-container,
 .sidebar .profile-img {
     width: 25px;
@@ -187,10 +183,6 @@ aside li *,
 /* ==========
 2.2 ARTICLE 
 =============*/
-
-article {
-    flex-grow: 1;
-}
 
 .sidebar > *,
 .button,
@@ -312,6 +304,10 @@ section > h5 {
 
 .toolbar {
     background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 90px;
     display: flex;
 }
