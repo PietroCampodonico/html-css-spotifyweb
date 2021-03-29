@@ -111,6 +111,7 @@ a {
 aside {
     background-color: black;
     overflow: auto;
+    min-width: 225px;
 }
 
 aside a *,
@@ -427,7 +428,7 @@ section > h5 {
 /* 4.3 XS */
 @media screen and (max-width: 767px) {
     aside {
-        width: 55px;
+        min-width: 55px;
     }
     
     .hidden {
