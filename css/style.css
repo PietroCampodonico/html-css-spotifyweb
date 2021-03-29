@@ -15,7 +15,6 @@
                         2.2.3.1 Row.Third
         
         3.  Toolbar
-                3.1 Hover
 
         4. Media Queries
             4.1 MD
@@ -72,16 +71,13 @@ img {
     align-self: flex-start;
 }
 
-.flex-self-center {
-    align-self: center;
-}
-
-
 /* 1.2 Typography */
 
 li:hover *,
 .download:hover *,
 .playlist:hover h4,
+.icon-container-small:hover i,
+.toolbar h5:hover small,
 .text-white,
 .fa-play-circle-o {
     color: white;
@@ -106,6 +102,12 @@ a {
 
 main {
     height: calc(100vh - 90px);
+}
+
+.sidebar .playlist-scroll,
+section.library {
+    flex-grow: 1;
+    overflow: auto;
 }
 
 /* ===========
@@ -151,14 +153,10 @@ aside li *,
     font-weight: bold;
 }
 
-.sidebar .square:hover {
+.sidebar .playlist > a:hover .square{
     background-color: white;
 }
 
-.sidebar .playlist-scroll {
-    flex-grow: 1;
-    overflow: auto;
-}
 
 .playlist-scroll li{
     margin-bottom: 10px
@@ -187,10 +185,6 @@ aside li *,
 2.2 SECTION.LIBRARY 
 ===================*/
 
-section.library {
-    flex-grow: 1;
-    overflow: auto;
-}
 
 .sidebar {
     height: 100%;
@@ -238,10 +232,6 @@ section.middle,
     height: 2px;
     background-color: #a1ed2c;
     margin: 5px auto;
-}
-
-.middle li:hover a {
-    color: white;
 }
 
 /* 2.2.3 section.bottom */
@@ -310,6 +300,7 @@ section.third .album-container > .black-hover {
 section > h5 {
     margin: 10px 0;
 }
+
 /* =============
     3. TOOLBAR
 =================*/
@@ -393,13 +384,6 @@ section > h5 {
     margin-left: 30px
 }
 
-/* 3.1 hover */
-
-.icon-container-small:hover i,
-.toolbar h5:hover small {
-    color: white;
-}
-
 .toolbar h5:hover small {
     text-decoration: underline;
 }
@@ -415,8 +399,6 @@ section > h5 {
 /* ===============
   4. MEDIA QUERIES
 ==================*/
-
-
 
 /* 4.1 MD */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
